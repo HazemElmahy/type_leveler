@@ -1,0 +1,18 @@
+.center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MyDiv {
+  position: fixed;
+  background-color: black;
+  color: wheat;
+  z-index: 20;
+  height: 50px;
+  width: 100px;
+  opacity: 0.9;
+  border-radius: 15px;
+  margin: 10px;
+  left: 150px;
+}/*# sourceMappingURL=content.css.map */

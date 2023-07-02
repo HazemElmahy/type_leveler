@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Type",
+  "description": "Extension to watch typeracer.com as record my avg typing speed",
+  "version": "0.1",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "favicon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.typeracer.com/*"],
+      "js": ["js/content.js"],
+      "css": ["css/content.css"]
+    }
+  ],
+  "commands": {
+    "check_speed": {
+      "suggested_key": {
+        "default": "Alt+Shift+L"
+      },
+      "description": "check speed and update score"
+    }
+  },
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "permissions": ["webRequest"],
+  "host_permissions": ["https://*.typeracer.com/*"]
+}

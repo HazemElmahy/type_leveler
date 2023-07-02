@@ -1,4 +1,4 @@
-## my personal leveling system for tracking my current average typing speed
+## leveling system for tracking my current average typing speed
 ### api: fastapi, pydantic
 ### orm: sqlalchemy, alembic
 
